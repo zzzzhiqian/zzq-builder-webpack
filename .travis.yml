@@ -1,0 +1,16 @@
+language: node_js
+
+sudo: false  #管理员权限
+
+cache: 
+  apt: true 
+  directories:  #缓存目录
+    - node_modules
+
+node_js: stable  #nodejs版本
+
+install: 
+  - npm install -D  #先安装外层的依赖
+  - cd ./test/smoke/template
+  - npm install -D #再安装内层的依赖
+
