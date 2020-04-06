@@ -13,6 +13,7 @@ install:
   - npm install -D  #先安装外层的依赖
   - cd ./test/smoke/template
   - npm install -D #再安装内层的依赖
+  - cd ../../../
 
 scripts: 
   - npm test
