@@ -14,3 +14,5 @@ install:
   - cd ./test/smoke/template
   - npm install -D #再安装内层的依赖
 
+scripts: 
+  - npm test
